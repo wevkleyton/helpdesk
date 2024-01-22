@@ -17,10 +17,12 @@ public class DevConfig {
 	@Value("${spring.jpa.hibernate.ddl-auto}")
 	private String value;
 	
-	public void instanciaDB() {
-//		if (value.equals("create")) {
+	public String instanciaDB() {
+		if (value.equals("create")) {
 			this.dbService.instanciaDB();
+			
 //		}
-//		return false;
+	return "Adicionando carga de dados!"; 
+
 	}
 }

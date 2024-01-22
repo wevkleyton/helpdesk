@@ -1,6 +1,7 @@
 package com.suporte.helpdesk.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
@@ -13,7 +14,9 @@ public class TestConfig {
 	@Autowired
 	private DBService dbService;
 
-	public void instanciaDB() {
+	@Bean
+	public String instanciaDB() {
 		this.dbService.instanciaDB();
+		return "Adicionando carga de dados!"; 
 	}
 }

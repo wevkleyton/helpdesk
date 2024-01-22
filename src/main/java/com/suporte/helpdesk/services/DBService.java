@@ -13,7 +13,6 @@ import com.suporte.helpdesk.domain.enums.Prioridade;
 import com.suporte.helpdesk.domain.enums.Status;
 import com.suporte.helpdesk.repositores.ChamadoRepository;
 import com.suporte.helpdesk.repositores.ClienteRepository;
-import com.suporte.helpdesk.repositores.PessoaRepository;
 import com.suporte.helpdesk.repositores.TecnicoRepository;
 
 @Service
